@@ -1,0 +1,14 @@
+# Book configuration
+title: "Python Tutorials"
+author: "Ashish Ranjan Karn"
+logo: ""
+toc_title: "Contents"
+home_page: "intro.md"
+
+repository:
+  url: https://github.com/arkarn/python-tutorials
+  path_to_book: ""
+  branch: main
+
+launch_buttons:
+  thebe: true
