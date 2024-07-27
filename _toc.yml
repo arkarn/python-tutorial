@@ -1,0 +1,12 @@
+format: jb-book
+root: intro
+chapters:
+  - file: chapter1/index
+    sections:
+      - file: chapter1/basics
+  - file: chapter2/index
+    sections:
+      - file: chapter2/data_structures
+  - file: chapter3/index
+    sections:
+      - file: chapter3/loops
