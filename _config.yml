@@ -8,7 +8,7 @@ home_page: "intro.md"
 repository:
   url: https://github.com/arkarn/python-tutorials
   path_to_book: ""
-  branch: gh-pages
+  branch: main
 
 launch_buttons:
   thebe: true
