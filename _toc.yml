@@ -1,6 +1,12 @@
 format: jb-book
 root: intro
 chapters:
+  - file: chapter1/introduction_to_python
+    sections: []
+  - file: chapter3/chapter3_data_structures
+    sections: []
+  - file: chapter2/basic_syntax_and_data_types
+    sections: []
   - file: chapter1/index
     sections:
       - file: chapter1/basics
