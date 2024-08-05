@@ -6,6 +6,7 @@ tmp*
 # C extensions
 *.so
 _build
+_build/*
 # Distribution / packaging
 .Python
 build/
