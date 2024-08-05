@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Chapter 1: Introduction to Python &#8212; Python Tutorials</title>
+    <title>Section 1: Quick Overview &#8212; Python Tutorials</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter1/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter3/data_structures_overview';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Overview of Python" href="overview_of_python.html" />
-    <link rel="prev" title="Welcome to Python Tutorials" href="../intro.html" />
+    <link rel="next" title="Section 2: Data Structures" href="data_structures_detailed.html" />
+    <link rel="prev" title="Chapter 3: Data Structures" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -174,9 +174,9 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Chapter 1: Introduction to Python</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview_of_python.html">Overview of Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="setting_up_python.html">Setting Up the Environment</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter1/index.html">Chapter 1: Introduction to Python</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter1/overview_of_python.html">Overview of Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter1/setting_up_python.html">Setting Up the Environment</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter2/index.html">Chapter 2: Basic Syntax And Data Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -184,9 +184,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter2/basic_knowledge_in_detail.html">Section 2: Python Basics</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter3/index.html">Chapter 3: Data Structures</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../chapter3/data_structures_overview.html">Section 1: Quick Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter3/data_structures_detailed.html">Section 2: Data Structures</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Chapter 3: Data Structures</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Section 1: Quick Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_structures_detailed.html">Section 2: Data Structures</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter4/index.html">Chapter 4: Control Structures</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -260,7 +260,7 @@
       
       
       
-      <li><a href="../_sources/chapter1/index.md" target="_blank"
+      <li><a href="../_sources/chapter3/data_structures_overview.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -344,7 +344,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Chapter 1: Introduction to Python</h1>
+    <h1>Section 1: Quick Overview</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -354,7 +354,26 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sections">Sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-accessing-lists">Creating and Accessing Lists</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-methods">List Methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-accessing-tuples">Creating and Accessing Tuples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuple-methods">Tuple Methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-accessing-dictionaries">Creating and Accessing Dictionaries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionary-methods">Dictionary Methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-accessing-sets">Creating and Accessing Sets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-methods">Set Methods</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -366,18 +385,81 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-introduction-to-python">
-<h1>Chapter 1: Introduction to Python<a class="headerlink" href="#chapter-1-introduction-to-python" title="Link to this heading">#</a></h1>
-<p>In this chapter, we will cover the basics of Python.</p>
-<section id="sections">
-<h2>Sections<a class="headerlink" href="#sections" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><a class="reference internal" href="overview_of_python.html"><span class="std std-doc">Overview of Python</span></a></p></li>
-<li><p><a class="reference internal" href="setting_up_python.html"><span class="std std-doc">Installing Python</span></a></p></li>
-</ol>
-</section>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="section-1-quick-overview">
+<h1>Section 1: Quick Overview<a class="headerlink" href="#section-1-quick-overview" title="Link to this heading">#</a></h1>
+<section id="lists">
+<h2>Lists<a class="headerlink" href="#lists" title="Link to this heading">#</a></h2>
+<p>Lists are ordered collections of items that can be changed. They are defined using square brackets.</p>
+<section id="creating-and-accessing-lists">
+<h3>Creating and Accessing Lists<a class="headerlink" href="#creating-and-accessing-lists" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Output: apple</span>
+</pre></div>
 </div>
+</section>
+<section id="list-methods">
+<h3>List Methods<a class="headerlink" href="#list-methods" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">append()</span></code>: Adds an item to the end of the list.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">remove()</span></code>: Removes the first occurrence of a specified item.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sort()</span></code>: Sorts the items in the list.</p></li>
+</ul>
+</section>
+</section>
+<section id="tuples">
+<h2>Tuples<a class="headerlink" href="#tuples" title="Link to this heading">#</a></h2>
+<p>Tuples are similar to lists but are immutable (cannot be changed). They are defined using parentheses.</p>
+<section id="creating-and-accessing-tuples">
+<h3>Creating and Accessing Tuples<a class="headerlink" href="#creating-and-accessing-tuples" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">coordinates</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">coordinates</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Output: 20</span>
+</pre></div>
+</div>
+</section>
+<section id="tuple-methods">
+<h3>Tuple Methods<a class="headerlink" href="#tuple-methods" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">count()</span></code>: Returns the number of times a specified value occurs in a tuple.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">index()</span></code>: Returns the index of the first occurrence of a specified value.</p></li>
+</ul>
+</section>
+</section>
+<section id="dictionaries">
+<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">#</a></h2>
+<p>Dictionaries are collections of key-value pairs. They are defined using curly braces.</p>
+<section id="creating-and-accessing-dictionaries">
+<h3>Creating and Accessing Dictionaries<a class="headerlink" href="#creating-and-accessing-dictionaries" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">person</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>  <span class="c1"># Output: Alice</span>
+</pre></div>
+</div>
+</section>
+<section id="dictionary-methods">
+<h3>Dictionary Methods<a class="headerlink" href="#dictionary-methods" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">get()</span></code>: Returns the value for a specified key.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">keys()</span></code>: Returns a list of all the keys in the dictionary.</p></li>
+</ul>
+</section>
+</section>
+<section id="sets">
+<h2>Sets<a class="headerlink" href="#sets" title="Link to this heading">#</a></h2>
+<p>Sets are unordered collections of unique items. They are defined using curly braces.</p>
+<section id="creating-and-accessing-sets">
+<h3>Creating and Accessing Sets<a class="headerlink" href="#creating-and-accessing-sets" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">unique_numbers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">unique_numbers</span><span class="p">)</span>  <span class="c1"># Output: {1, 2, 3, 4, 5}</span>
+</pre></div>
+</div>
+</section>
+<section id="set-methods">
+<h3>Set Methods<a class="headerlink" href="#set-methods" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">add()</span></code>: Adds an item to the set.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">remove()</span></code>: Removes a specified item from the set.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -393,7 +475,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./chapter1"
+            path: "./chapter3"
         },
         predefinedOutput: true
     }
@@ -411,20 +493,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../intro.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to Python Tutorials</p>
+        <p class="prev-next-title">Chapter 3: Data Structures</p>
       </div>
     </a>
     <a class="right-next"
-       href="overview_of_python.html"
+       href="data_structures_detailed.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Overview of Python</p>
+        <p class="prev-next-title">Section 2: Data Structures</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -444,7 +526,26 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sections">Sections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lists">Lists</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-accessing-lists">Creating and Accessing Lists</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#list-methods">List Methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-accessing-tuples">Creating and Accessing Tuples</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuple-methods">Tuple Methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-accessing-dictionaries">Creating and Accessing Dictionaries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionary-methods">Dictionary Methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-accessing-sets">Creating and Accessing Sets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-methods">Set Methods</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

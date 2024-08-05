@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Chapter 1: Introduction to Python &#8212; Python Tutorials</title>
+    <title>Chapter 4: Control Structures &#8212; Python Tutorials</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter1/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter4/index';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Overview of Python" href="overview_of_python.html" />
-    <link rel="prev" title="Welcome to Python Tutorials" href="../intro.html" />
+    <link rel="next" title="Conditional Statements: Quick Overview" href="basics_of_conditional.html" />
+    <link rel="prev" title="Section 2: Data Structures" href="../chapter3/data_structures_detailed.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -174,9 +174,9 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Chapter 1: Introduction to Python</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview_of_python.html">Overview of Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="setting_up_python.html">Setting Up the Environment</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter1/index.html">Chapter 1: Introduction to Python</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter1/overview_of_python.html">Overview of Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter1/setting_up_python.html">Setting Up the Environment</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter2/index.html">Chapter 2: Basic Syntax And Data Types</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -189,10 +189,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter3/data_structures_detailed.html">Section 2: Data Structures</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter4/index.html">Chapter 4: Control Structures</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../chapter4/basics_of_conditional.html">Conditional Statements: Quick Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter4/basics_of_loops.html">Loops: Quick Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter4/mastering_control_flow.html">Mastering Control Flow in Python</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Chapter 4: Control Structures</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="basics_of_conditional.html">Conditional Statements: Quick Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basics_of_loops.html">Loops: Quick Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mastering_control_flow.html">Mastering Control Flow in Python</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter5/index.html">Chapter 5: Functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -260,7 +260,7 @@
       
       
       
-      <li><a href="../_sources/chapter1/index.md" target="_blank"
+      <li><a href="../_sources/chapter4/index.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -344,7 +344,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Chapter 1: Introduction to Python</h1>
+    <h1>Chapter 4: Control Structures</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -354,6 +354,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sections">Sections</a></li>
 </ul>
             </nav>
@@ -366,14 +367,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="chapter-1-introduction-to-python">
-<h1>Chapter 1: Introduction to Python<a class="headerlink" href="#chapter-1-introduction-to-python" title="Link to this heading">#</a></h1>
-<p>In this chapter, we will cover the basics of Python.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-4-control-structures">
+<h1>Chapter 4: Control Structures<a class="headerlink" href="#chapter-4-control-structures" title="Link to this heading">#</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>Control structures are essential for controlling the flow of execution in a program. They allow you to make decisions and repeat actions based on certain conditions.</p>
+</section>
 <section id="sections">
 <h2>Sections<a class="headerlink" href="#sections" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="overview_of_python.html"><span class="std std-doc">Overview of Python</span></a></p></li>
-<li><p><a class="reference internal" href="setting_up_python.html"><span class="std std-doc">Installing Python</span></a></p></li>
+<li><p><a class="reference internal" href="#conditional_statements.md"><span class="xref myst">Conditional Statements</span></a></p></li>
+<li><p><a class="reference internal" href="#loops.md"><span class="xref myst">Loops</span></a></p></li>
+<li><p><a class="reference internal" href="mastering_control_flow.html"><span class="std std-doc">Mastering Control Flow</span></a></p></li>
 </ol>
 </section>
 <div class="toctree-wrapper compound">
@@ -393,7 +398,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./chapter1"
+            path: "./chapter4"
         },
         predefinedOutput: true
     }
@@ -411,20 +416,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../intro.html"
+       href="../chapter3/data_structures_detailed.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to Python Tutorials</p>
+        <p class="prev-next-title">Section 2: Data Structures</p>
       </div>
     </a>
     <a class="right-next"
-       href="overview_of_python.html"
+       href="basics_of_conditional.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Overview of Python</p>
+        <p class="prev-next-title">Conditional Statements: Quick Overview</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -444,6 +449,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sections">Sections</a></li>
 </ul>
   </nav></div>
