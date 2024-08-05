@@ -3,10 +3,27 @@ root: intro
 chapters:
   - file: chapter1/index
     sections:
-      - file: chapter1/basics
+      - file: chapter1/overview_of_python
+      - file: chapter1/setting_up_python
   - file: chapter2/index
     sections:
-      - file: chapter2/data_structures
+      - file: chapter2/basic_syntax_and_data_types
+      - file: chapter2/basic_knowledge_in_detail
   - file: chapter3/index
     sections:
-      - file: chapter3/loops
+      - file: chapter3/data_structures_overview
+      - file: chapter3/data_structures_detailed
+  - file: chapter4/index
+    sections:
+      - file: chapter4/basics_of_conditional
+      - file: chapter4/basics_of_loops
+      - file: chapter4/mastering_control_flow
+  - file: chapter5/index
+    sections:
+      - file: chapter5/defining_functions
+      - file: chapter5/function_arguments
+      - file: chapter5/return_values
+  - file: chapter6/index
+    sections:
+      - file: chapter6/importing_modules
+      - file: chapter6/creating_packages
