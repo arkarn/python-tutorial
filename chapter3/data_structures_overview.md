@@ -1,4 +1,4 @@
-# Chapter 3: Data Structures
+# Section 1: Quick Overview
 
 ## Lists
 Lists are ordered collections of items that can be changed. They are defined using square brackets.

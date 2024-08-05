@@ -1,4 +1,4 @@
-# Chapter 2: Basic Syntax and Data Types
+# Section 1: Quick Overview
 
 ## Variables and Data Types
 In Python, variables are used to store data values. Python has various data types, including:
@@ -45,32 +45,4 @@ name = input("Enter your name: ")
 print("Hello, " + name + "!")
 ```
 
-## Control Structures
 
-### Conditional Statements
-Python uses `if`, `elif`, and `else` statements to control the flow of the program based on conditions.
-
-### Example
-```python
-age = 18
-if age >= 18:
-    print("You are an adult.")
-else:
-    print("You are a minor.")
-```
-
-### Loops
-You can use `for` and `while` loops to iterate over sequences or execute a block of code multiple times.
-
-### Example of a For Loop
-```python
-for i in range(5):
-    print(i)
-```
-
-### Example of a While Loop
-```python
-count = 0
-while count < 5:
-    print(count)
-    count += 1
